@@ -1,0 +1,12 @@
+################################
+# Dune module information file #
+################################
+
+# Name of the module
+Module: fem-pred
+Version: 1.0
+Maintainer: jurak@math.hr
+# Required build dependencies
+Depends: dune-common dune-geometry dune-uggrid dune-grid dune-localfunctions dune-istl dune-alugrid
+# Optional build dependencies
+#Suggests:
