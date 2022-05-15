@@ -106,6 +106,8 @@ void  izracunajProfilMatrice(GV const& gv,
     for (auto const & elem : elements(gv))
       {
         // nastavi ....        
+		// ako je index_j susjed od index_i ....
+	    // profilMatrice[index_i].insert(index_j)
       }
   }
 
@@ -177,7 +179,7 @@ void assemble(GV & gv, FEM const & fem, Mat & A, Vec & b){
     } // Kraj petlje po elementima
 
     // Dirichletov rubni uvjet
-    // Svaku Dirichletovu točku zamijenjujemo trivijalnim linijama.
+    // Svaku Dirichletovu točku zamijenjujemo trivijalnom linijom.
     for(auto const & element : elements(gv))
     {
         for (auto const & is : intersections(gv,element))
